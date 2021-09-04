@@ -745,7 +745,7 @@ contract MyToken is Ownable, ERC721 {
     function _mintAndIncrementSupply(address to, uint tokenId) internal{
         require(tokenId <=100, "Already created");
         _mint(to,tokenId);
-        totalSupply+;
+        totalSupply++;
     }
     
     function buyNft(uint quantity) external payable {
